@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Say cheese</title>
+</head>
+<body>
+    <!-- ref: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos -->
+    <div id="root">
+        <div class="words">
+            <h1>Say Cheese</h1>
+            <h3>Say 'cheese' to use webcam to take a photo of you or your friends <br>very convenient for group photos :)</h3>
+        </div>
+      <main>
+        <div class="camera rect">
+            <video id="video">Video stream not available.</video>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="output rect">
+            <p id="failed"> </p>
+            <img id="photo" alt="the captured frame" src=""/>
+        </div>
+      </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
